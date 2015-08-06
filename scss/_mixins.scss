@@ -5,7 +5,7 @@
 		//.block{ font-size:px(16) } //in the css file is compiled : .block{ font-size: 1em; }
 	// /example
 
-@function px($sizePx, $size100:16) {
+@function px($sizePx, $size100:18) {
 	@if not unitless($sizePx) {
 	  $sizePx: strip-units($sizePx);
 	}

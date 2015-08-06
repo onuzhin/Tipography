@@ -1,0 +1,18 @@
+.mainScreen{
+	background: url(../images/main-bg.jpg) no-repeat center center;
+	min-height:820px;
+	&-text{
+		span{
+			font-size: 40px;
+			font-family: "ClearSans";
+			color:#fff;
+			font-weight:300;
+			display:inline-block;
+			background-color: rgba( 75, 111, 142,0.9 );
+			em{
+				font-size: 72px;			
+			}
+		}
+
+	}
+}

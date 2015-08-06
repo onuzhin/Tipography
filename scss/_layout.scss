@@ -5,39 +5,13 @@ body *{
 }
 
 .mbox {
-	width: $body-minWidth;
+	max-width: $box-maxWidth;
 	margin: 0 auto;
 	position: relative;
 	z-index: 1;
 }
 .mbox:after, .zForm-row:after, .zTabs-buttons:after {
 	@extend %cfix;
-}
-
-/* header layout */
-.header {
-	position: relative;
-	z-index: 2;
-
-	.hlogo{
-
-	}
-
-	&-top {
-
-		&-left {
-			
-		}
-		&-center {
-			
-		}
-		&-right {
-			
-		}
-	}
-	&-bottom {
-		
-	}
 }
 
 .main {

@@ -14,6 +14,8 @@
 }
 
 /* fonts */
-//@include font(HelveticaNeueDeskUI-Italic, HelveticaNeueDeskUI, normal, italic);
+@include font(ClearSans-Regular, ClearSans, normal, normal);
+@include font(ClearSans-Thin, ClearSans, 300, normal);
+@include font(ClearSans-Light, ClearSans, 100, normal);
 
 

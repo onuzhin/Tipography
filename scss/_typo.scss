@@ -2,10 +2,8 @@
 %heading {font-weight:normal;margin-bottom:1em;color:$ctextColor;}
 
 a{
-	@extend %link;
 	border:0;
-
-	&:hover{color:$baseColor_hover;text-decoration: none;}
+	text-decoration:none;
 }
 
 .mainheading,.ctext h1,h1{

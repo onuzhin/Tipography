@@ -24,12 +24,6 @@
 	<script src="js/jquery.watermark.min.js" type="text/javascript"></script>
 
 	<!-- remove Files -->
-	<script src="develop/john.js" type="text/javascript"></script>
-	<script src="develop/kuzyuk.js" type="text/javascript"></script>
-	<script src="develop/nuzhin.js" type="text/javascript"></script>
-	<script src="develop/oleg.js" type="text/javascript"></script>
-
-	<script src="js/myalert.js" type="text/javascript"></script>
 	<script src="develop/autocssrenew.js" type="text/javascript"></script>
 	<!-- remove Files -->
 	
@@ -61,10 +55,28 @@
 	?>
 	<header class="header">
 		<div class="mbox container">
-			<?
-				if($act=='none' || $act=='index') echo '<div class="h_logo">logo</div>';
-				else echo '<div class="logo"><a href="#">h_logo</a></div>';
-			?>
-			<?partial('zTabs');?>
+			<a href="/" class="header-logo"><img src="images/logo.png" alt="" /></a>
+			<div class="header-contacts">
+				<div class="header-contacts-adress">Москва, Боровая, 7, стр 2</div>
+				<div class="header-contacts-phone">+7 495 360 07 89</div>
+				<a href="#" class="header-contacts-call">заказать звонок</a>
+			</div>
+			<div class="sm-clear"></div>
+			<div class="header-menu">
+				<nav class="navbar topMenu" role="navigation">
+					<div class="collapse navbar-collapse">
+						<ul class="nav navbar-nav">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li class="active"><a href="#">Технологии</a></li>
+							<li><a href="#">Гарантии</a></li>
+							<li><a href="#">Портфолио</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<div class="navbar-toggle"><span class="icon-container"><span class="line line01"></span><span class="line line02"></span><span class="line line03"></span><span class="line line04"></span></span></div>
+		
 		</div>
 	</header>
