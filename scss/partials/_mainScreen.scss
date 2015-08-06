@@ -1,7 +1,10 @@
 .mainScreen{
 	background: url(../images/main-bg.jpg) no-repeat center center;
 	min-height:820px;
-	&-text{
+	&-text{ 
+		position: absolute;
+		top: 80px;
+		left: 22px;
 		span{
 			font-size: 40px;
 			font-family: "ClearSans";
@@ -9,10 +12,92 @@
 			font-weight:300;
 			display:inline-block;
 			background-color: rgba( 75, 111, 142,0.9 );
+			padding: 0px 21px 0 21px;
+			line-height: 60px;
 			em{
-				font-size: 72px;			
+				font-size: 72px;
+				padding-right: 13px;	
 			}
 		}
 
+	}
+}
+.feedback{
+	background:url(../images/feedback-bg.png) no-repeat top center;
+	width:338px;  
+	position: absolute;
+    right: 50px;
+    top: 107px;
+	border-radius: 5px;
+	&-head{   
+		background: #5db0bf;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		color: #ffffff;
+		font-size: 23px;
+		font-weight: 300;
+		line-height: 32px;
+		text-align: center;
+		padding: 9px 0 12px 0;
+	}
+	&-body{
+		position:relative;
+		padding: 22px 20px 48px 20px;
+		&:before{	
+		}
+		&:after{	
+		}
+	}
+	&-form{   
+		margin-bottom: 24px;
+	}
+	&-field{
+		margin-bottom: 29px;
+	}
+	&-button{}
+	&-countdown{
+		&-title{
+			color:#959595;
+			font-size:15px;
+			font-weight:100;
+			text-align:center;
+			margin-bottom: 11px;
+		}
+		&-days{
+			@extend %cfix;
+		}
+		&-day{
+			float:left;
+			position:relative;
+			padding: 0 24px 0 11px;
+			text-align:center;
+			span{
+				display:block;
+				font-weight:100;
+			}
+			span:nth-child(1){
+				font-size: 30px;
+				color: #000;
+				margin-bottom: 3px;
+			}
+			span:nth-child(2){
+				font-size:15px;
+				color:#959595;
+			}
+			&:last-child{
+				padding-right:0;
+				&:after{
+					content:none;
+				}
+			}
+			&:after{
+				content:"/";
+				color:#f04e3c;
+				font-size:30px;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+		}
 	}
 }

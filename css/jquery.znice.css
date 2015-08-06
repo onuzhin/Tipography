@@ -36,11 +36,12 @@
 }
 .zNice-error-text {
 	position: absolute;
-	left: 100%;
+	right: 0;
 	top: 3px;
 	color: red;
 	margin: 0 0 0 5px;
 	white-space: nowrap;
+	visibility: hidden;
 }
 .zNice-tArea textarea, .zNice-tInput input {
 	position: relative;
@@ -50,8 +51,8 @@
 	overflow: auto;
 	outline: none !important;
 	width: 100%;
-	font-size: 12px;
-	font-family: sans-serif;
+	font-size: 18px;
+	font-family:ClearSans;
 	background: url('../images/spacer.gif');
 }
 .zNice-select {
@@ -105,16 +106,16 @@
  * placeholder
  * ------------- */
 ::-webkit-input-placeholder {
-	color: #212121;
+	color: #959595;
 }
 :-moz-placeholder {
-	color: #212121;
+	color: #959595;
 }
 ::-moz-placeholder {
-	color: #212121;
+	color: #959595;
 }
 :-ms-input-placeholder {
-	color: #212121;
+	color: #959595;
 }
 
 /* END zNice base styles DONT TOUCH IF YOU DONT KNOW WHAT IS THIS!!!!!*/
@@ -143,12 +144,16 @@
 	display: block;
 }
 .zNice-tInput input {
+	color: #959595;
+	font-size:18px;
+	font-weight:300;
 	padding: 5px;
-	height: 28px;
+	height: 42px;;
+	text-align:center;
 }
 .zNice-tInput .zNice-bg {
-	background: #fff;
-	border: 1px solid #ccc;
+	background: transparent;
+	border-bottom: 2px solid #959595;
 }
 
 /*Icon input*/
@@ -328,14 +333,8 @@
 }
 
 /*Default input*/
-.zNice-tInput.zNice-focus .zNice-bg {
-	border-color: yellow;
-}
-.zNice-tInput.zNice-error .zNice-bg {
+.zNice-tInput.zNice-error .zNice-bg{
 	border-color: red;
-}
-.zNice-tInput.zNice-valid .zNice-bg {
-	border-color: green;
 }
 
 /*Quant input*/

@@ -50,6 +50,13 @@
 	border-radius: $radius;
 }
 
+@mixin blur($radius) {
+	-webkit-filter: blur($radius);
+	-moz-filter: blur($radius);
+	-o-filter: blur($radius);
+	-ms-filter: blur($radius);
+	filter: blur($radius);
+}
 
 // placeholders
 
@@ -97,5 +104,15 @@
 	-khtml-user-select: none;
 	-webkit-user-select: none;
 	user-select: none;
+}
+
+%fullContent {
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
 }
 

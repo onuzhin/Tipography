@@ -40,3 +40,6 @@ $(document).ready(function(){
 	navbartoggle();
 	$('.footer_placeholder').height($('.footer').outerHeight());
 });
+
+$(window).resize(function(){
+});
